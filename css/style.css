@@ -1,0 +1,483 @@
+:root {
+    --Vermelho-base: #CE140F;
+    --Vermelho-secundario: #640c09;
+    --branco-principal: #FFFFFF;
+    --branco-secundario: #F4F4F4;
+    --amarelo-base: #FAB82F;
+    --cinza: #222121;
+    --Verde: #14923E;
+    --Verde-secundario: #0a4e21;
+    --Vermelho-rodape: #CD1B1B;
+
+    --fonte-principal: Inter;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-principal);
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--Vermelho-base);
+    color: white;
+    padding: 1rem 0;
+}
+
+.logo {
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 5.5rem;
+    margin-right: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 20% 65%;
+    height: 20vh;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.principal {
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 1rem 0;
+}
+
+.menu {
+    font-size: 1.5rem;
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.botao {
+    background-color: var(--Vermelho-base);
+    border-radius: 0.5rem;
+    color: var(--branco-principal);
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.botao:hover {
+    background-color: var(--Vermelho-secundario);
+}
+
+a:hover {
+    background-color: var(--Vermelho-secundario);
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 70vh;
+    background-color: var(--amarelo-base);
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.cabecalho_img {
+    width: 23rem;
+    height: 20rem;
+    margin: 3rem;
+    margin-left: 9rem;
+}
+
+.cabecalho_caixa {
+    margin: 7rem;
+    margin-right: 2rem;
+}
+
+.cabecalho_titulo {
+    font-size: 3rem;
+}
+
+.descricao {
+    font-size: 1.2rem;
+}
+
+.cardapio {
+    height: auto;
+    background-color: var(--branco-principal);
+    padding: 1rem 0;
+    width: 100%;
+    position: relative;
+
+}
+
+.imagem_cardapio {
+    height: 11rem;
+    width: 14rem;
+    margin-top: 1.5rem;
+}
+
+.cardapio1 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.item_cardapio {
+    margin: 4rem 6rem;
+}
+
+.cardapio_titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+.titulo {
+    margin: 3rem;
+    text-align: center;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.background {
+    height: 14rem;
+    width: 21rem;
+    background-color: var(--branco-secundario);
+    display: flex;
+    justify-content: center;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.opcoes {
+    background-color: var(--amarelo-base);
+    text-align: center;
+    height: 110vh;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.item_opcoes {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.mega_titulo {
+    background-color: var(--Vermelho-base);
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 1.5rem;
+}
+
+.mega_descricao {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.item_titulo {
+    font-weight: bold;
+    margin: 1.5rem;
+    font-size: 1.7rem;
+}
+
+.opcoes_img {
+    height: 25rem;
+    width: 20;
+}
+
+.opcoes_titulo {
+    margin: 2rem;
+}
+
+.rodape {
+    height: auto;
+    background-color: var(--cinza);
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.rodape_direitos {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+.rodape_container {
+    display: grid;
+    grid-template-columns: 20% 33% 40%;
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.rodape_titulo {
+    font-weight: bold;
+    margin: 1rem;
+    font-size: 1.7rem;
+}
+
+.rodape_descricao {
+    font-weight: bold;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.logo2 {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 1rem;
+}
+
+.rodape_texto {
+    margin-top: 1rem;
+    color: var(--branco-principal);
+}
+
+.rodape_pedido {
+    color: var(--branco-principal);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.botao2 {
+    background-color: var(--Verde);
+    border-radius: 1rem;
+    color: var(--branco-principal);
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    gap: 0.8rem;
+}
+
+.botao2:hover {
+    background-color: var(--Verde-secundario);
+}
+
+.botao3 {
+    background-color: var(--Vermelho-rodape);
+    border-radius: 1rem;
+    color: var(--branco-principal);
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    gap: 0.8rem;
+}
+
+.botao3:hover {
+    background-color: var(--Vermelho-secundario);
+}
+
+@media screen and (max-width: 700px) {
+    .container.principal {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem 0 0;
+    }
+
+    .menu {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .cabecalho {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+
+    .cabecalho_caixa {
+        margin: 1rem;
+        order: 2;
+    }
+
+    .cabecalho_titulo {
+        font-size: 1.8rem;
+    }
+
+    .descricao {
+        font-size: 0.9rem;
+        white-space: normal;
+    }
+
+    .botao {
+        margin: 1rem auto;
+        width: 7rem;
+        font-size: 0.9rem;
+    }
+
+    .cabecalho_img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto 1.5rem;
+        order: 1;
+    }
+
+    .titulo {
+        margin: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .cardapio1 {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .item_cardapio {
+        margin: 1.5rem auto;
+        max-width: 90%;
+    }
+
+    .background {
+        max-width: 20rem;
+        height: 12rem;
+    }
+
+    .cardapio_titulo {
+        font-size: 1.2rem;
+    }
+
+    .preco {
+        font-size: 0.7rem;
+    }
+
+    .opcoes {
+        height: auto;
+        padding: 1rem 0 1.5rem;
+    }
+
+    .opcoes_titulo {
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .item_opcoes {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .opcoes_img {
+        height: auto;
+        max-height: 14rem;
+        width: 70%;
+    }
+
+    .item_titulo {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+
+    .mega_titulo {
+        font-size: 1.4rem;
+        margin: 0.5rem;
+    }
+
+    .mega_descricao {
+        font-size: 1rem;
+    }
+
+    .rodape {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .rodape_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .rodape_texto {
+        margin-bottom: 0.5rem;
+    }
+
+    .logo2 {
+        width: 6rem;
+        height: 6rem;
+        margin: 0 auto 0.5rem;
+    }
+
+    .rodape_pedido {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .rodape_titulo {
+        font-size: 1.2rem;
+    }
+
+    .rodape_descricao {
+        font-size: 1rem;
+    }
+
+    .botao2,
+    .botao3 {
+        width: 80%;
+        font-size: 1.2rem;
+        padding: 0.7rem;
+    }
+
+    .rodape_direitos {
+        font-size: 0.6rem;
+        margin-top: 1rem;
+    }
+}
